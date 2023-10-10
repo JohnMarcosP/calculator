@@ -1,29 +1,11 @@
-#include <iostream>
+    #include <iostream>
 #include <cmath>
 using namespace std;
-double soma(double a, double b)
-{
-    return a+b;
-}
-double subtracao(double a, double b)
-{
-    return a-b;
-}
-double multi(double a, double b)
-{
-    return a*b;
-}
-double potencia(double a, double b)
-{
-    return pow(a,b);
-}
-double div(double a, double b)
-{
-    return a/b;
-}
-void inicialization()
-{
-    cout << "|------------------------------|" << endl;
+class Calculator{
+    public:
+    void initialize()
+    {
+        cout << "|------------------------------|" << endl;
     cout << "| This is a calculator program |" << endl;
     cout << "| Program made by Joao Marcos  |" << endl;
     cout << "| Project #1                   |" << endl;
@@ -85,7 +67,29 @@ void inicialization()
         cout << "Result: "  << result << endl;
     } while (true);
     
-    
     cout << "Program closed." << endl;
+    }
 
+private:
+    double soma(double a, double b)
+{
+    return a+b;
 }
+double subtracao(double a, double b)
+{
+    return a-b;
+}
+double multi(double a, double b)
+{
+    return a*b;
+}
+double potencia(double a, double b)
+{
+    return pow(a,b);
+}
+double div(double a, double b)
+{
+    return a/b;
+}     
+
+};
