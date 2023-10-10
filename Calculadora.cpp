@@ -1,10 +1,11 @@
 #include <iostream>
-#include <cmath>
 #include "Calculadora.hpp"
 using namespace std;
 int main()
 {
-    inicialization();
+    Calculator calculator;
+
+    calculator.initialize();
     
     return 0;
 }
